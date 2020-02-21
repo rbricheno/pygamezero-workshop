@@ -6,7 +6,7 @@ food = Actor('pear')
 score = 0
 
 def move_food():
-    food.center = (random.randint(60, 740),random.randint(60, 540))
+    food.center = random.randint(60, 740),random.randint(60, 540)
 
 move_food()
 

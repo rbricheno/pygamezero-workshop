@@ -3,7 +3,7 @@ import random
 player = Actor('chicken')
 player.center = 400, 400
 food = Actor('pear')
-food.center = (random.randint(60, 740),random.randint(60, 540))
+food.center = random.randint(60, 740),random.randint(60, 540)
 
 def draw():
     screen.fill((0, 150, 0))
@@ -13,7 +13,7 @@ def draw():
 def update():
     checkKeys()
     if player.collidepoint(food.pos):
-        food.center = (-100, -100)
+        food.center = -100, -100
 
 def checkKeys():
     if keyboard.left:
