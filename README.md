@@ -1,1 +1,1 @@
-Introduction to Pyton programming using Pygame Zero
+Introduction to Python programming using Pygame Zero
