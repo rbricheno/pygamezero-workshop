@@ -9,7 +9,6 @@ def update():
     checkKeys()
 
 def checkKeys():
-    global player
     if keyboard.left:
         if player.x > 40: player.x -= 5
     if keyboard.right:

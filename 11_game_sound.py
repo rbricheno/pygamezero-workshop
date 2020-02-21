@@ -43,7 +43,6 @@ def update():
             hide_treat()
 
 def checkKeys():
-    global player
     if keyboard.left:
         if player.x > 40: player.x -= 5
     if keyboard.right:
@@ -61,4 +60,3 @@ clock.schedule_interval(move_treat, 3)
 clock.schedule(game_over, 20)
 music.set_volume(0.2)
 music.play("backing")
-

@@ -14,7 +14,6 @@ def update():
         food.center = (-100, -100)
 
 def checkKeys():
-    global player
     if keyboard.left:
         if player.x > 40: player.x -= 5
     if keyboard.right:
