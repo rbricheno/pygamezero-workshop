@@ -32,7 +32,7 @@ def draw():
 def update():
     global score
     if playing:
-        checkKeys()
+        check_keys()
         if player.collidepoint(food.pos):
             score = score + 5
             move_food()
@@ -40,7 +40,7 @@ def update():
             score = score + 10
             hide_treat()
 
-def checkKeys():
+def check_keys():
     if keyboard.left:
         if player.x > 40: player.x -= 5
     if keyboard.right:

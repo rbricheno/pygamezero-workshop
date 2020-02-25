@@ -16,11 +16,11 @@ def draw():
     food.draw()
 
 def update():
-    checkKeys()
+    check_keys()
     if player.collidepoint(food.pos):
         move_food()
 
-def checkKeys():
+def check_keys():
     if keyboard.left:
         if player.x > 40: player.x -= 5
     if keyboard.right:
@@ -29,3 +29,4 @@ def checkKeys():
         if player.y > 50: player.y -= 5
     if keyboard.down:
         if player.y < 550: player.y += 5
+
