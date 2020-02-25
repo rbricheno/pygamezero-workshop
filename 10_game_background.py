@@ -8,10 +8,10 @@ score = 0
 playing = True
 
 def move_food():
-    food.center = random.randint(60, 740),random.randint(60, 540)
+    food.center = (random.randint(60, 740),random.randint(60, 540))
 
 def move_treat():
-    treat.center = random.randint(60, 740),random.randint(60, 540)
+    treat.center = (random.randint(60, 740),random.randint(60, 540))
 
 def hide_treat():
     treat.center = -100, -100

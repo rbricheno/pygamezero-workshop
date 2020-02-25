@@ -8,10 +8,10 @@ score = 0
 playing = True
 
 def move_food():
-    food.center = random.randint(60, 740),random.randint(60, 540)
+    food.center = (random.randint(60, 740),random.randint(60, 540))
 
 def move_treat():
-    treat.center = random.randint(60, 740),random.randint(60, 540)
+    treat.center = (random.randint(60, 740),random.randint(60, 540))
 
 def hide_treat():
     treat.center = -100, -100
@@ -60,3 +60,4 @@ clock.schedule_interval(move_treat, 3)
 clock.schedule(game_over, 20)
 music.set_volume(0.2)
 music.play("backing")
+
